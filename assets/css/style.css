@@ -1,0 +1,382 @@
+:root {
+    --primary-color: #161d27;
+    --secondary-color: #a19975;
+    --light-color: #ffffff;
+    --neutral: rgb(204, 214, 246);
+    --grey-color: #efefef;
+    --ash-color: rgb(136, 146, 176);
+    --gold: #c5b358;
+    --extra-light: rgba(255, 255, 255, 0.6);
+    --font-semi-bold: 600;
+    --font-bold: 700;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    color: var(--primary-color);
+    letter-spacing: 0.05em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--font-semi-bold) !important;
+}
+
+.nav-link {
+    font-family: 'Source Sans Pro', sans-serif;;
+}
+
+a {
+    color: var(--light-color);
+}
+
+a:hover {
+    color: var(--gold);
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+.active {
+    color: var(--secondary-color);
+}
+
+section {
+    padding: 100px 0;
+}
+
+.text-light {
+    color: var(--light-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-light {
+    background-color: var(--light-color) !important;
+}
+
+.bg-grey {
+    background-color: var(--grey-color);
+}
+
+.btn {
+    font-weight: var(--font-semi-bold);
+    padding: 12px 35px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--light-color) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    opacity: 0.95;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--light-color) !important;
+    border: 1px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.navbar {
+    min-height: 80px;
+}
+
+.nav-link {
+    color: var(--light-color);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.logo {
+    max-width: 50px;
+}
+
+#home i {
+    font-size: 26px;
+}
+
+#home i:hover {
+    color: #c5b358;
+}
+
+/*custom */
+
+.num {
+    font-family: 'Source Code Pro', monospace;
+    color: var(--gold);
+}
+
+.intro {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-family: 'Source Code Pro', monospace;
+    color: var(--gold);
+}
+
+.name {
+    font-size: 5rem;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    color: rgb(204, 214, 246);
+}
+
+.description {
+    font-size: 4rem;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    color: rgb(136, 146, 176);
+}
+
+.intro-details {
+    font-size: 1.7rem;
+    color: rgb(136, 146, 176);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.project-link {
+    color: var(--primary-color);
+}
+/* custom */
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid var(--primary-color);
+}
+
+.heading-title {
+    max-width: 800px;
+}
+
+.main-photo {
+    border: 10px solid var(--light-color);
+    border-radius: 2px;
+    box-shadow: -10px 10px 0 0 var(--secondary-color);
+}
+
+.card {
+    transition: all 0.5s;
+}
+
+.card:hover {
+    box-shadow: 0 15px 30px -12px rgba(50, 50, 93, 0.1);
+    transition: all 0.5s;
+}
+
+.card a {
+    color: var(--primary-color);
+}
+
+.logo-company {
+    max-width: 180px;
+}
+
+.profile-img {
+    border-radius: 50px;
+    max-width: 40px;
+}
+
+footer {
+    color: var(--light-color);
+    padding: 30px 0;
+    text-align: left;
+}
+
+footer h6 {
+    color: var(--extra-light);
+}
+
+footer ul li {
+    margin: 10px 0;
+}
+
+footer i {
+    font-size: 20px;
+}
+
+footer a:hover {
+    color: var(--light-color);
+    opacity: 0.95;
+}
+
+/*Start animations*/
+.single-animation {
+    opacity: 0;
+    animation: fadeDown 0.5s forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeUp {
+    0% {
+        transform: translateY(4rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeDown {
+    0% {
+        transform: translateY(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/*End animations*/
+
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    .pricing-card {
+        padding: 2rem 1rem !important;
+    }
+
+    .intro {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 15px;
+        font-family: 'Source Code Pro', monospace;
+        color: var(--gold);
+    }
+
+    .name {
+        font-size: 4rem;
+        font-family: 'Libre Baskerville', serif;
+        font-weight: 600;
+        color: var(--neutral);
+    }
+
+    .description {
+        font-size: 3.3rem;
+        font-family: 'Libre Baskerville', serif;
+        font-weight: 700;
+        color: var(--ash-color);
+    }
+
+    .intro-details {
+        font-size: 1.5rem;
+        color: var(--ash-color);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .main-photo {
+        max-width: 300px;
+    }
+
+    footer {
+        padding: 30px;
+        text-align: center;
+    }
+
+    footer h6 {
+        margin-top: 1rem;
+    }
+
+    footer .logo {
+        margin-top: 2rem;
+    }
+
+    .contact-form {
+        padding: 2rem 1.5rem !important;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 515px) {
+    .intro {
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin-bottom: 15px;
+        font-family: 'Source Code Pro', monospace;
+        color: var(--gold);
+    }
+
+    .name {
+        font-size: 3rem;
+        font-family: 'Libre Baskerville', serif;
+        font-weight: 600;
+        color: var(--neutral);
+    }
+
+    .description {
+        font-size: 2.5rem;
+        font-family: 'Libre Baskerville', serif;
+        font-weight: 700;
+        color: var(--ash-color);
+    }
+
+    .intro-details {
+        font-size: 1.3rem;
+        color: var(--ash-color);
+    }
+}
+
+@media (max-width: 413px) {
+    .intro {
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin-bottom: 15px;
+        font-family: 'Source Code Pro', monospace;
+        color: var(--gold);
+    }
+
+    .name {
+        font-size: 2.5rem;
+        font-family: 'Libre Baskerville', serif;
+        font-weight: 600;
+        color: var(--neutral);
+    }
+
+    .description {
+        font-size: 2.3rem;
+        font-family: 'Libre Baskerville', serif;
+        font-weight: 700;
+        color: var(--ash-color);
+    }
+
+    .intro-details {
+        font-size: 1.3rem;
+        color: var(--ash-color);
+    }
+}
